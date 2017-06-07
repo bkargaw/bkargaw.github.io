@@ -2093,11 +2093,13 @@
 /* Intro */
 
 	#intro {
-		background: url("images/overlay.png"), url("../../images/intro.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, bottom center;
-		background-repeat: repeat, no-repeat;
+		background: url("https://c.s-microsoft.com/en-us/CMSImages/Surface_Studio_TechSpecs_9_VideoPanel_V1.jpg?version=10271796-30d8-882e-3146-7e2ae55158f8");
+		height: 100%;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-position: top;
+		background-size: cover;
+		opacity: .7;
 	}
 
 /* One */

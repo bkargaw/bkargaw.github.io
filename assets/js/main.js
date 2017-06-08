@@ -4,6 +4,22 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+$(document).ready(function(){
+
+    $(".gif").hover(
+        function()
+        {
+          var src = $(this).attr("src");
+          $(this).attr("src", src.replace(/\.png$/i, ".gif"));
+        },
+        function()
+        {
+          var src = $(this).attr("src");
+          $(this).attr("src", src.replace(/\.gif$/i, ".png"));
+        });
+    })
+});
+
 (function($) {
 
 	skel.breakpoints({
@@ -16,7 +32,6 @@
 	});
 
 	$(function() {
-
 		var	$window = $(window),
 			$body = $('body'),
 			$header = $('#header'),

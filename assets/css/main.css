@@ -917,6 +917,11 @@
 			background: url("images/overlay.png");
 		}
 
+		.image:hover:before {
+			opacity: 0;
+			
+		}
+
 		.image img {
 			display: block;
 			width: 100%;

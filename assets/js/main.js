@@ -4,21 +4,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-$(document).ready(function(){
-
-    $(".gif").hover(
-        function()
-        {
-          var src = $(this).attr("src");
-          $(this).attr("src", src.replace(/\.png$/i, ".gif"));
-        },
-        function()
-        {
-          var src = $(this).attr("src");
-          $(this).attr("src", src.replace(/\.gif$/i, ".png"));
-        });
-    })
-});
 
 (function($) {
 
@@ -146,8 +131,35 @@ $(document).ready(function(){
 								bottom:		'30vh',
 								delay:		50,
 								initialize:	function() { $(this).addClass('inactive'); },
-								terminate:	function() { $(this).removeClass('inactive'); },
-								enter:		function() { $(this).removeClass('inactive'); },
+								terminate:	function() { $(this).removeClass('inactive');
+																					$("gif").each(function(){
+																						$(this).hover(
+																						 function()
+																						 {
+																							 debugger
+																							 var src = $(this).attr("src");
+																							 $(this).attr("src", src.replace(/\.png$/i, ".gif"));
+																						 },
+																						 function()
+																						 {
+																							 var src = $(this).attr("src");
+																							 $(this).attr("src", src.replace(/\.gif$/i, ".png"));
+																					 });})
+							 	},
+								enter:		function() { $(this).removeClass('inactive');
+																					$("gif").each(function(){
+																						$(this).hover(
+																						 function()
+																						 {
+																							 var src = $(this).attr("src");
+																							 $(this).attr("src", src.replace(/\.png$/i, ".gif"));
+																						 },
+																						 function()
+																						 {
+																							 var src = $(this).attr("src");
+																							 $(this).attr("src", src.replace(/\.gif$/i, ".png"));
+																					 });})
+								},
 								leave:		function() { $(this).addClass('inactive'); }
 							});
 

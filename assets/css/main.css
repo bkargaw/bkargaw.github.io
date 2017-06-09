@@ -919,7 +919,7 @@
 
 		.image:hover:before {
 			opacity: 0;
-			
+
 		}
 
 		.image img {
@@ -1897,7 +1897,7 @@
 
 		.main.style3 {
 			text-align: center;
-			padding: 6em 0 6em 0;
+			padding: 4em 0 5em 0;
 		}
 
 			.main.style3 .content > header {
@@ -2145,7 +2145,34 @@
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
-
+/* skill */
+	#work {
+		background: url("http://www.printawallpaper.com/upload/designs/coffee_at_work_detail.jpg");
+		background-repeat: no-repeat;
+		background-attachment: local;
+		background-position: top;
+		background-size: cover;
+		opacity: .8;
+	}
+/* skill */
+	#skill {
+		opacity: .8;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.skillsList{
+		margin: auto;
+		width: 80%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.skillsList li img{
+		height: 200px;
+		width: 200px;
+	}
 /* Contact */
 
 	#contact {

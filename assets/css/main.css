@@ -2148,8 +2148,31 @@
 		opacity: .8;
 	}
 
-	
-/* skill */
+/* experience */
+	.experienceList {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.experienceItem {
+		display: flex;
+		justify-content: center;
+		padding: 20px;
+	}
+
+	.experienceDescription {
+		min-width: 100px;
+		max-width: 400px;
+		margin-left: 50px
+	}
+
+	.indioExperienceList li, .indio {
+		text-align: start;
+		list-style-type: square;
+	}
+
+/* work */
 	#work {
 		background: url("http://www.printawallpaper.com/upload/designs/coffee_at_work_detail.jpg");
 		background-repeat: no-repeat;
@@ -2159,7 +2182,7 @@
 		opacity: .8;
 	}
 /* skill */
-	#skill {
+	#skill, #experience {
 		opacity: .8;
 		display: flex;
 		justify-content: center;

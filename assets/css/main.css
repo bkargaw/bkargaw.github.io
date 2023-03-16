@@ -2149,6 +2149,11 @@
 	}
 
 /* experience */
+
+.experienceSectionContent {
+	display: flex;
+	flex-direction: column;
+}
 	.experienceList {
 		display: flex;
 		justify-content: center;
@@ -2161,13 +2166,17 @@
 		padding: 20px;
 	}
 
+	.experienceTitle{
+		min-width: 200px;
+	}
+
 	.experienceDescription {
 		min-width: 100px;
 		max-width: 400px;
 		margin-left: 50px
 	}
 
-	.indioExperienceList li, .indio {
+	.experienceList li {
 		text-align: start;
 		list-style-type: square;
 	}
